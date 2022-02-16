@@ -1,6 +1,6 @@
 import backtrader
 import backtrader.feeds as btfeeds
-from strategies import CandleStrategy
+from strategies import CandleStrategy, ADXStrategy, KCStrategy, RSIStrategy
 import os
 import pandas as pd
 
