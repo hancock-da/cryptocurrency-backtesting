@@ -32,6 +32,9 @@ for filename in os.listdir('datasets/1d_datasets'):
     #cerebro.addsizer(backtrader.sizers.FixedSize, stake=1)
 
     cerebro.addstrategy(CandleStrategy, fastsma=15, slowsma=50, tp_mult=3, printlog=False)
+    #cerebro.addstrategy(ADXStrategy)
+    #cerebro.addstrategy(KCStrategy)
+    #cerebro.addstrategy(RSIXStrategy)
     
     # if __name__ == '__main__':
     #     strats = cerebro.optstrategy(
@@ -57,6 +60,6 @@ for filename in os.listdir('datasets/1d_datasets'):
 
     #cerebro.plot()
 
-stats = print('{} successes out of {} with an average return of {}'.format((results.final_value > 1000000).sum(), results.final_value.count(),results.final_value.mean()))
+stats = print('{} successes out of {} with an average return of {}'.format((results.final_value > 100000).sum(), results.final_value.count(),results.final_value.mean()))
 
-#results.to_csv('backtesting/results/three_line_1d.csv')
+#results.to_csv('results/candle_strategy_1d.csv')
