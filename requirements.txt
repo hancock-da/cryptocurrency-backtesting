@@ -1,0 +1,6 @@
+os
+datetime
+pandas
+backtrader
+backtrader.feeds
+binance
