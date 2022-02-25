@@ -19,3 +19,7 @@
  * CandleStrategy
    * Buy condition: If a three-line-strike candlestick pattern appears whilst in a downtrend (fast SMA < slow SMA) could indicate a reversal
    * Sell condition: Stop-loss = buy price - 2(default) * ATR and Take-profit = Buy price + 2 * risk (buy price - stop-loss)
+
+# License
+
+This project is licensed under the MIT license - see LICENSE.txt file for more details.
